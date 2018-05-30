@@ -42,40 +42,20 @@
   }
 }
 
-@keyframes flip-in-card {
-  0% {
-    transform: rotateX(0deg);
-    @include vendor(box-shadow, 0 4px 16px 0 rgba(darken($light--4, 30%), 0.4));
-  }
-  100% {
-    transform: rotateX(180deg);
-    @include vendor(box-shadow, 0 8px 32px 0 rgba(darken($light--4, 50%), 0.4));
-  }
-}
-@keyframes flip-out-card {
-  0% {
-    transform: rotateX(180deg);
-    @include vendor(box-shadow, 0 8px 32px 0 rgba(darken($light--4, 50%), 0.4));
-  }
-  100% {
-    transform: rotateX(0deg);
-    @include vendor(box-shadow, 0 4px 16px 0 rgba(darken($light--4, 30%), 0.4));
-  }
-
-}
-@keyframes flip-in-image {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes flip-out-image {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+.winner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include flex(block, column, center, center);
+  width: 100%;
+  height: 100%;
+  background-color: rgba($light--4, 0.74);
+  color: $primary;
+  animation: winner 700ms forwards;
+  button {
+    border: none;
+    background-color: transparent;
+    color: $primary;
+    cursor: pointer;
   }
 }

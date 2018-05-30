@@ -1,5 +1,5 @@
 //// Flexbox mixin:
-@mixin flex($display, $direction, $mainAxis, $crossAxis, $wrap) {
+@mixin flex($display, $direction, $mainAxis, $crossAxis, $wrap: null) {
   /// Display:
   @if $display != null {
     @if $display == inline {
