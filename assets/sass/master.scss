@@ -1,12 +1,12 @@
-@import "helpers";
-
 $light--1: #E0E0E0;
 $light--2: #F5F5F5;
 $light--3: #FAFAFA;
 $light--4: #FFFFFF;
-$primary: #5294E2;
+$primary: #484ba9;
 $danger: #CC575D;
 
+@import "helpers";
+@import "animations";
 @import "game";
 
 //// Header styles:
